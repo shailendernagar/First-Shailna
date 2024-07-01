@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suggestion Box</title>
+  <style>
+    .suggestion-box {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      padding: 20px;
+      z-index: 9999;
+    }
+
+    .suggestion-box h3 {
+      margin-top: 0;
+    }
+
+    .suggestion-box textarea {
+      width: 100%;
+      height: 100px;
+      resize: none;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .suggestion-box button {
+      display: block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shailna's Website</title>
+  <style>
+    /* Define the color scheme */
+    :root {
+      --primary-color: #4CAF50; /* Green */
+      --secondary-color: #2196F3; /* Blue */
+      --accent-color: #E91E63; /* Pink */
+      --bg-color: #333; /* Dark background */
+      --text-color: #f1f1f1; /* Light text color */
+    }
+
+    /* Apply the styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: var(--secondary-color);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      background-color: var(--accent-color);
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: var(--accent-color);
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: var(--text-color);
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>WELCOME TO SHAILNA</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Resume</a>
+    <a href="#">Skills</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="content">
+    <div class="section">
+      <h2>About Me</h2>
+      <p>My name is Shailender Nagar, I am a BCA student in kalka Institute of Research and Advanced studies. I had created this website on my initial name letters that are Shail from Shailender and Na from Nagar, together they form Shailna that represent my first project of creating a website to showcase my skills in HTML by providing some basic features in it.</p>
+      <p>This is just a starting, furthermore i'll be sharing some amazing eye-catching works that not only in HTML also in Python. I am a quick learner that helps me keep motivating my self to look forward and keep pushing myself untill i satisfy.
+Thank you viwing my project, i'll keep posting more project that can build your interest in coding. </p>
+    </div>
+
+    <div class="section">
+      <h2>Photos</h2>
+      <img src="C:\Users\NAAGAR\Downloads\20201002_173001.jpg" style="width: 300px; height: 200px;" alt="Photo 1">
+      
+      <img src="C:\Users\NAAGAR\OneDrive\Desktop\m2.jpg" style="width: 300px; height: 200px;" alt="Photo 2">
+      <img src="C:\Users\NAAGAR\Downloads\Snapchat-458383920.jpg" style="width: 300px; height: 200px;"  alt="Photo 3">
+  
+
+    </div>
+
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Python</li>
+        <li>C</li>
+        <li>MYSQL</li>
+        <li>HTML</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Shailender Nagar's Website. All rights reserved.</p>
+<div class="suggestion-box">
+    <h3>Have a suggestion?</h3>
+    <textarea id="suggestion-text" placeholder="Write your suggestion here..."></textarea>
+    <button onclick="submitSuggestion()">Submit</button>
+  </div>
+
+  <script>
+    function submitSuggestion() {
+      var suggestionText = document.getElementById('suggestion-text').value;
+      // You can add your custom logic here to handle the suggestion, such as sending it to a server or storing it
+      console.log('Suggestion submitted:', suggestionText);
+      // Clear the textarea
+      document.getElementById('suggestion-text').value = '';
+    }
+  </script>
+
+  </footer>
+</body>
+</html>
